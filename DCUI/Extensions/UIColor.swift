@@ -131,7 +131,7 @@ public extension UIColor {
     }
     
     var hasLightContrast: Bool {
-        let value = red*255*0.299 + green*255*0.587 + blue*255*0.114
+        let value = red*255*CGFloat(0.299) + green*255*CGFloat(0.587) + blue*255*CGFloat(0.114)
         return value > 186
     }
     
