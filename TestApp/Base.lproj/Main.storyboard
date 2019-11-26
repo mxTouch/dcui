@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uJL-cp-JwB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller2-->
+        <scene sceneID="TkN-PV-vcF">
+            <objects>
+                <viewController id="uJL-cp-JwB" customClass="ViewController2" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ktr-FW-htR"/>
+                        <viewControllerLayoutGuide type="bottom" id="lfy-yB-Z0K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zc0-en-FNh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-8b-bSS">
+                                <rect key="frame" x="137.5" y="318" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="i9y-CE-pzl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6h-XC-qDU">
+                                <rect key="frame" x="67" y="28" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XdA-8b-bSS" firstAttribute="centerY" secondItem="Zc0-en-FNh" secondAttribute="centerY" id="OBF-SR-Mnc"/>
+                            <constraint firstItem="XdA-8b-bSS" firstAttribute="centerX" secondItem="Zc0-en-FNh" secondAttribute="centerX" id="jYE-Dw-lOv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoL-ok-whR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e55-4c-zpy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Llo-gP-tx6">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="UfQ-lU-Mlv" customClass="MediaCollectionViewCell" customModule="TestApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bz7-rL-4cX" customClass="MediaView" customModule="TestApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="mediaView" destination="bz7-rL-4cX" id="ZMM-0C-jac"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lrX-IN-NVC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HMS-qh-ned"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e55-4c-zpy" secondAttribute="bottom" id="2T0-H6-rPv"/>
+                            <constraint firstItem="e55-4c-zpy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Esg-Ww-tbk"/>
+                            <constraint firstAttribute="trailing" secondItem="e55-4c-zpy" secondAttribute="trailing" id="ftr-5F-UVo"/>
+                            <constraint firstItem="e55-4c-zpy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lLT-tn-2B9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="e55-4c-zpy" id="77Q-tf-iLT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391.19999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vWX-zR-Qzz">
+            <objects>
+                <navigationController id="iOB-g2-qPb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wbt-Et-yKo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="navigation" destination="DsM-nn-WeH" id="HfH-b5-vZn"/>
+                        <outlet property="navigationProperties" destination="IbP-Zu-uqd" id="2XL-e0-wau"/>
+                        <segue destination="Hyb-Xj-iNM" kind="relationship" relationship="rootViewController" id="rXY-QZ-sBj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eS0-uH-eHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="DsM-nn-WeH" customClass="Navigation" customModule="DCUI"/>
+                <customObject id="IbP-Zu-uqd" customClass="NavigationProperties" customModule="DCUI">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="barTintColor">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="back"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="backTitle" value=" "/>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-1241" y="825"/>
+        </scene>
+        <!--Navigate View Controller-->
+        <scene sceneID="VIH-5H-idP">
+            <objects>
+                <viewController id="Hyb-Xj-iNM" customClass="NavigateViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jW5-vD-osQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vXf-9h-w7F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NWZ-bk-OaI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfV-cq-pTR">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ji6-Vh-SKY" kind="show" id="0S3-a1-1RM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QfV-cq-pTR" firstAttribute="centerY" secondItem="NWZ-bk-OaI" secondAttribute="centerY" id="NBp-It-lFU"/>
+                            <constraint firstItem="QfV-cq-pTR" firstAttribute="centerX" secondItem="NWZ-bk-OaI" secondAttribute="centerX" id="u5F-XF-ZnL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="01Z-fJ-HZq"/>
+                    <connections>
+                        <outlet property="navigationProperties" destination="2BF-VU-6ay" id="x43-1K-N6W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3y-mQ-IMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="2BF-VU-6ay" customClass="NavigationProperties" customModule="DCUI"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="826"/>
+        </scene>
+        <!--Navigate View Controller2-->
+        <scene sceneID="ONQ-aY-Nau">
+            <objects>
+                <viewController id="ji6-Vh-SKY" customClass="NavigateViewController2" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CQf-5V-tjO"/>
+                        <viewControllerLayoutGuide type="bottom" id="yVG-oG-y0r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JBp-MP-NeC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yw7-Eu-uPn"/>
+                    <connections>
+                        <outlet property="navigationProperties" destination="hgr-av-aMp" id="c8x-iQ-U28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojf-jR-27H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="hgr-av-aMp" customClass="NavigationProperties" customModule="DCUI">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="barTintColor">
+                            <color key="value" red="0.81960784310000001" green="0.67843137249999996" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="barCleared" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="382" y="825"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="22" height="32"/>
+    </resources>
+</document>
